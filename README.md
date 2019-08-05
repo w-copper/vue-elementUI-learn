@@ -1,5 +1,11 @@
 # router-learn
 
+实际上不止有vue-router部分。
+
+在开始阶段是想对登录登出状态记忆等进行熟悉
+
+
+
 ## Project setup
 ```
 npm install

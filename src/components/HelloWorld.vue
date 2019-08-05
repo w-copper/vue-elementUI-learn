@@ -26,6 +26,12 @@
       <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
       <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
+      <li>
+        <router-link to="/dashbord">Dash Bord</router-link>
+      </li>
+      <li>
+        <el-button @click="go_some">Dash Bord</el-button>
+      </li>
     </ul>
   </div>
 </template>
@@ -35,7 +41,12 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  methods: {
+    go_some(){
+      this.$router.push({name:'/dashbord'})
+    }
+  },
 }
 </script>
 
