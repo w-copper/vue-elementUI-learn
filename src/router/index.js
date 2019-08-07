@@ -7,6 +7,10 @@ import HelloWorld from '../components/HelloWorld'
 import Login from "../components/Login"
 import DashBord from "../components/DashBord"
 import UserInfo from "../components/UserInfo"
+import GeoDataManage from "../components/GeoDataManage"
+import BuildDataManage from "../components/BuildDataManage"
+import LogManage from "../components/LogManage"
+import Setting from "../components/Setting"
 import store from "../store";
 import {type} from "../store"
 
@@ -50,6 +54,46 @@ const router = new Router({
                 requireAuth:true,
                 addLog:true,
                 verbose:'用户管理'
+            }
+        },
+        {
+            path:'/geodata',
+            name:'geodata',
+            component:GeoDataManage,
+            meta:{
+                requireAuth:true,
+                addLog:true,
+                verbose:'地理数据'
+            }
+        },
+        {
+            path:'/builddata',
+            name:'builddata',
+            component:BuildDataManage,
+            meta:{
+                requireAuth:true,
+                addLog:true,
+                verbose:'倾斜摄影数据'
+            }
+        },
+        {
+            path:'/logs',
+            name:'logs',
+            component:LogManage,
+            meta:{
+                requireAuth:true,
+                addLog:true,
+                verbose:'日志'
+            }
+        },
+        {
+            path:'/setting',
+            name:'setting',
+            component:Setting,
+            meta:{
+                requireAuth:true,
+                addLog:true,
+                verbose:'设置'
             }
         },
         {
